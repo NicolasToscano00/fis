@@ -1,0 +1,254 @@
+html{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: "Roboto";
+  
+}
+#Titulo {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: bold;
+  
+}
+body {
+  background-color: rgba(27, 94, 32, 0.5);
+  background-image: url(../../docs/archivos/comidas.png);
+}
+
+
+.combos{
+  width:200px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rgb(14, 12, 143);
+  color:white;
+  text-align: center;
+}
+
+#Menu_principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fotosComidas {
+  width: 15%;
+  height: 15%;
+  border: 1px solid #0000002f;
+  border-radius: 15%;
+  object-fit:contain;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.textoComida {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto";
+}
+
+
+
+#comidaMenu {
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  position:relative;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+  ;
+}
+
+
+#precioComida {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  align-items: flex-end;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1%;
+  background:  rgba(2, 119, 189, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin-top: 0.5%;
+  font-family: "Roboto";
+  color:white;
+}
+#botonIngresar{
+  margin-left:30%;
+  padding-left: 4%;
+  padding-right: 4%;
+  color:white;
+}
+#botonCancelarSelec, #botonCancelarCarga{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1%;
+  background: #eb1616;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin-top: 0.5%;
+}
+
+#menuSeleccionar{
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  margin-left: 9%;
+  margin-right: 9%;
+  position:relative;
+  border-radius: 15px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 3%;
+}
+
+input[type=text]:focus {
+  background-color: rgb(211, 244, 255);
+}
+input[type=number]:focus {
+  background-color: rgb(211, 244, 255);
+}
+input[type=date]:focus {
+  background-color: rgb(211, 244, 255);
+}
+#fechaOrden{
+  float:right;
+}
+
+#bloqueRestricciones{
+  width: 50%;
+  height: 30%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  text-align:left;
+  padding-bottom: 5%;
+  resize: none;
+}
+
+table, th, td{
+	border: 3px solid  rgba(2, 119, 189, 1);;
+  background-color:  rgba(2, 119, 189, 0.5);;
+  color:white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Roboto";
+  font-size: 110%;
+  word-wrap: break-word;
+  
+}
+
+.nav-link{
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: "Roboto";
+  
+}
+
+#navBarSaldo, #navBarAlumno{
+  color: black;
+  border: 1px solid transparent;
+}
+#toCargarSaldo{
+  background-color: rgb(27, 94, 32);
+  color:white;
+  font-family: "Roboto";
+  margin-right: 30px;
+  text-align: center;
+}
+
+#toOrder{
+  background-color: rgba(2, 119, 189, 1);
+  color:white;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 30px;
+  font-family: "Roboto";
+  
+  
+}
+
+#toHistorial{
+  background-color: rgba(2, 119, 189, 1);
+  color:white;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 30px;
+  font-family: "Roboto";
+  
+}
+
+
+
+#salir{
+  background-color: #e70000;
+  color:white;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 30px;
+  font-family: "Roboto";
+  
+}
+
+nav ul li{
+  padding : 0 10px 0 10px;
+  display: inline-block;
+}
+
+.navbar-collapse{
+  background: rgba(224, 224, 224, 0.2);
+}
+
+
+.bg-light {
+  --bs-bg-opacity: 0.75;
+}
+
+#menuCargarSaldo{
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  margin-left: 9%;
+  margin-right: 9%;
+  position:relative;
+  border-radius: 15px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 3%;
+}

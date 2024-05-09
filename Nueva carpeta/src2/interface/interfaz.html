@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="funciones.js" type="module"></script>
+    <script src="../domain/clases.js" type="module"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="Titulo">Menú Cantina</h1>
+    </header>
+    <br>
+    <section id="Menu_principal">
+        <div id="MenuPrincipal">
+            <label for="GruposClases">Grupo:</label>
+            <br>
+            <select class="combos" name="Grupo" id="GruposClases">
+                <option disabled selected>Click para elegir grupo</option>
+                <option value="1">1er Año</option>
+                <option value="2">2do Año</option>
+                <option value="3">3er Año</option>
+                <option value="4">4to Año</option>
+                <option value="5">5to Año</option>
+                <option value="6">6to Año</option>
+            </select>
+            <br><br>
+            <label for="Alumnos">Alumno:</label>
+            <br>
+            <select class="combos" name="Alumno" id="Alumnos"></select>
+            <br><br>
+            <button type="button" id="botonIngresar" value="Ingresar">Ingresar</button>
+        </div>
+    </section>
+
+    <section id="openApp">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <b><a class="nav-link disabled" aria-current="page" id="navBarAlumno"></a></b>
+                    </li>
+                    <li class="nav-item">
+                        <b><a class="nav-link disabled" aria-current="page" id="navBarSaldo"></a></b>
+
+                    </li>
+                    <li class="nav-item active">
+                        <a id="toCargarSaldo" class="nav-link" href="#">+</a>
+                    </li>
+                        <li class="nav-item active">
+                            <a id="toOrder" class="nav-link" href="#">Encargar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="toHistorial" class="nav-link" href="#">Historial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="salir" class="nav-link" href="#">Salir</a>
+                        </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="Encargar">
+            <div id="comidaMenu">
+                <img class="fotosComidas" id="imagenComida1">
+                <div class="textoComida">
+                    <p id="nombreComida1"></p>
+                    <br>
+                    <p id="precioComida1"></p>
+                </div>
+                <button type="button" class="botonSeleccionarComida" id="botonComida1" value="0">Seleccionar</button>
+            </div>
+            <div id="comidaMenu">
+                <img class="fotosComidas" id="imagenComida2">
+                <div class="textoComida">
+                    <p id="nombreComida2"></p>
+                    <br>
+                    <p id="precioComida2"></p>
+                </div>
+                <button type="button" class="botonSeleccionarComida" id="botonComida2" value="1">Seleccionar</button>
+            </div>
+            <div id="comidaMenu">
+                <img class="fotosComidas" id="imagenComida3">
+                <div class="textoComida">
+                    <p id="nombreComida3"></p>
+                    <br>
+                    <p id="precioComida3"></p>
+                </div>
+                <button type="button" class="botonSeleccionarComida" id="botonComida3" value="2">Seleccionar</button>
+            </div>
+            <div id="comidaMenu">
+                <img class="fotosComidas" id="imagenComida4">
+                <div class="textoComida">
+                    <p id="nombreComida4"></p>
+                    <br>
+                    <p id="precioComida4"></p>
+                </div>
+                <button type="button" class="botonSeleccionarComida" id="botonComida4" value="3">Seleccionar</button>
+            </div>
+            <div id="comidaMenu">
+                <img class="fotosComidas" id="imagenComida5">
+                <div class="textoComida">
+                    <p id="nombreComida5"></p>
+                    <br>
+                    <p id="precioComida5"></p>
+                </div>
+                <button type="button" class="botonSeleccionarComida" id="botonComida5" value="4">Seleccionar</button>
+            </div>
+            <div id="comidaMenu">
+                <img class="fotosComidas" id="imagenComida6">
+                <div class="textoComida">
+                    <p id="nombreComida6"></p>
+                    <br>
+                    <p id="precioComida6"></p>
+                </div>
+                <button type="button" class="botonSeleccionarComida" id="botonComida6" value="5">Seleccionar</button>
+            </div>
+        </div>
+
+        <div id="Historial">
+            <table id="idTablaHistorial">
+                <caption id="idCaption"></caption>
+                <thead>
+                    <tr>
+                        <th>Menú</th>
+                        <th>Cantidad</th>
+                        <th>Restricciones</th>
+                        <th>Fecha</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div id="Seleccionar">
+
+            <div id="menuSeleccionar">
+                <img class="fotosComidas" id="imagenComidaSelec" alt="Menu seleccionado">
+                <div class="textoComida">
+                    <p id="nombreComidaSelec"></p>
+                    <p id="precioComidaSelec"></p>
+                </div>
+                <label for="cantidad">Cantidad (1-10):</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1" required>
+                <label for="fechaOrden">Fecha: </label>
+                <input type="date" id="fechaOrden" name="trip-start" value="2023-06-15" min="2023-06-15"
+                    max="2023-12-31" required />
+
+                <label for="bloqueRestricciones">Restricciones: </label>
+
+                <input type="text" placeholder="Ingrese especificaciones/restricciones especiales para su pedido aquí"
+                    id="bloqueRestricciones" maxlength="100">
+                <button type="button" class="botonConfirmarCancelar" id="botonConfirmarSelec"
+                    value="confirmar">Confirmar</button>
+                <button type="button" class="botonConfirmarCancelar" id="botonCancelarSelec"
+                    value="cancelar">Cancelar</button>
+            </div>
+
+        </div>
+
+        <div id="CargarSaldo">
+            <div id="menuCargarSaldo">
+                <b><p id="textoCargarSaldo">Cargar Saldo</p></b>
+                <img src = "../../docs/archivos/dinero.png" class="fotosComidas" id="imagenComidaSelec" alt="dinero">
+                <label for="saldoACargar">Cantidad ($100-$10000):</label>
+                <input type="number" id="saldoACargar" name="cantidad" min="100" max="10000" value="0" required>
+
+                <button type="button" class="botonConfirmarCancelar" id="botonConfirmarCarga"
+                    value="confirmar">Confirmar</button>
+                <button type="button" class="botonConfirmarCancelar" id="botonCancelarCarga"
+                    value="cancelar">Cancelar</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
